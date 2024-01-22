@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main1.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--Wrapper-->
+    <div class="bg-[#000059] w-screen h-screen overflow-hidden py-8 flex flex-col justify-between items-center
+    text-white">
+        <p class="text-lg border border-white px-4 py-1 rounded-md bg-white/20" id="curr-info"></p>
+
+        <div class="grid grid-cols-3 grid-rows-3 w-64 h-64" id="boxes">
+            <div class="box box-0"></div>
+            <div class="box box-1 border-x-2 border-white"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3 border-y-2 border-white"></div>
+            <div class="box box-4 border-2 border-white"></div>
+            <div class="box box-5 border-y-2 border-white"></div>
+            <div class="box box-6"></div>
+            <div class="box box-7 border-x-2 border-white"></div>
+            <div class="box box-8"></div>
+        </div>
+
+        <button class="text-lg border border-white px-4 py-1 rounded-md bg-white/20 opacity-0 pointer-events-none"
+        onclick="initGame()"
+        id="new-btn">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
